@@ -1,11 +1,9 @@
 //back-end
 var leapYear = function(year) {
-  if ((year % 4 === 0) && (year % 100 !== 0)) {
-    return true;
-  // } else if (year % 4 === 0) {
-  //   return true;
+  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
+    return "Yay!";
   } else {
-  return false;
+  return "Sad Panda...";
   }
 };
 
